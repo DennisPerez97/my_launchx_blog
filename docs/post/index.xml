@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Bitácora de Viaje de @DennisPerez97</title>
+    <link>https://dennisperez97.github.io/my_launchx_blog/post/</link>
+    <description>Recent content in Posts on Bitácora de Viaje de @DennisPerez97</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dennisperez97.github.io/my_launchx_blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi primer server con Express.js</title>
+      <link>https://dennisperez97.github.io/my_launchx_blog/post/post_4/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennisperez97.github.io/my_launchx_blog/post/post_4/</guid>
+      <description>Creando mi primer server 1.Instala la dependencia en express con npm install express --save 2. Crea un archivo llamado app.js` y crea tu primera app de express. 3. Tenemos que configurar express e indicarle el puerto en el que se ejecutara
+// Usando objeto express const express = require(&amp;#39;express&amp;#39;) // App de Express const app = express() app.use(express.json()) // Indicamos que usaremos JSON // Puerto en que vamos a ver nuestra app: localhost:3000 const port = 3000 // Con esto inicializamos esta app app.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -31,6 +31,16 @@ Veamos a continuación como crear un proyecto de js con todas estas característ
     </item>
     
     <item>
+      <title>Mi primer server con Express.js</title>
+      <link>https://dennisperez97.github.io/my_launchx_blog/post/post_4/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennisperez97.github.io/my_launchx_blog/post/post_4/</guid>
+      <description>Creando mi primer server 1.Instala la dependencia en express con npm install express --save 2. Crea un archivo llamado app.js` y crea tu primera app de express. 3. Tenemos que configurar express e indicarle el puerto en el que se ejecutara
+// Usando objeto express const express = require(&amp;#39;express&amp;#39;) // App de Express const app = express() app.use(express.json()) // Indicamos que usaremos JSON // Puerto en que vamos a ver nuestra app: localhost:3000 const port = 3000 // Con esto inicializamos esta app app.</description>
+    </item>
+    
+    <item>
       <title>Mi ruta de aprendizaje launch-x</title>
       <link>https://dennisperez97.github.io/my_launchx_blog/posts/post_1/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>

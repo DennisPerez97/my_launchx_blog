@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mi primer server con Express.js - Bitácora de Viaje de @DennisPerez97</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://dennisperez97.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Aca veras como instalar e inicializar un server con express en JS"/>
+    <meta property="og:title" content="Mi primer server con Express.js"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dennisperez97.github.io/my_launchx_blog/post/post_4/"/>
+    
+    <meta property="og:description" content="Aca veras como instalar e inicializar un server con express en JS"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@visual_partner"/>
+    <meta name="twitter:creator" content="@visual_partner"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-default-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://dennisperez97.github.io/my_launchx_blog/">Bitácora de Viaje de @DennisPerez97</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-aboutme">
+                <a href="../../pages/about/">AboutMe</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+<div class="intro">
+  <h1>Mi primer server con Express.js<span class="dot">.</span></h1>
+  
+</div>
+
+<div class="content">
+  <h1 id="creando-mi-primer-server">Creando mi primer server</h1>
+<p>1.Instala la dependencia en express con <code>npm install express --save 2. Crea un archivo llamado </code>app.js` y crea tu primera app de express.
+3. Tenemos que configurar express e indicarle el puerto en el que se ejecutara</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="c1">// Usando objeto express
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">)</span>
+<span class="c1">// App de Express
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span> <span class="c1">// Indicamos que usaremos JSON
+</span><span class="c1">// Puerto en que vamos a ver nuestra app: localhost:3000
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="mi">3000</span>
+<span class="c1">// Con esto inicializamos esta app
+</span><span class="c1"></span><span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+ <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Example app listening on port </span><span class="si">${</span><span class="nx">port</span><span class="si">}</span><span class="sb">`</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div><h1 id="agrega-los-endpoint-que-desees">Agrega los endpoint que desees</h1>
+<ol start="4">
+<li>Utilizaremos el metodo GET de express para hacer un endpost, tendran el siguente formato</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">app.get(&#39;/turuta&#39;, (req,res) =&gt; {
+//El codigo que necesites para generar las respuestas
+    res.send(&#34;Hola este es la respuesta de /turuta&#34;) ///devuelves en un formato JSON
+})
+
+
+5. Levantas tu server con `node app.js`
+
+# Endpint GET con Query params
+Para fines del post realizaremos un codigo pequeño.
+6. Agrega el siguiente codigo
+![image](https://user-images.githubusercontent.com/99489937/167313484-cc764554-b021-4ab2-8493-8b3e4a6e22b6.png)
+
+7. Levanta el servidor con `node app.js` y accede al url `localhost:3000/v1/explorers/:id` y reemplaza el :id por 1 para que te devuelva el explorer Carlos
+
+# POST Crea un endpoint que se encargue de crear un explorer 
+
+1. Agrega el siguiente código:
+
+![image](https://user-images.githubusercontent.com/17634377/163704695-c4c3c9dc-4922-4db1-acc1-f550562bafb6.png)
+
+2. Nota que el `status code` es 201.
+3. Prueba el request 3 de postman.
+
+# PUT Crea un endpoint que se encargue de actualizar un explorer
+
+1. Agrega el siguiente código:
+
+![image](https://user-images.githubusercontent.com/17634377/163704739-d2d44eff-499f-46be-bc8f-4ddcc4d3abbb.png)
+
+2. Prueba el request 4 de postman.
+
+# DELETE Crea un endpoint para eliminar un explorer
+
+1. Agrega el siguiente código:
+
+![image](https://user-images.githubusercontent.com/17634377/163704760-fa8d67d4-bd16-489e-940e-dd5703b3eafa.png)
+
+2. Prueba el request 5 de postman.
+
+Creditos a Carlos Gilmar de Inovaccion
+
+</code></pre></div>
+</div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/dennis-yassef-perez-rosado/" title="linkedin" target="_blank" rel="noopener">
+          <img src="../../images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/DennisPerez97" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
