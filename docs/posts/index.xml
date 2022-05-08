@@ -8,6 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dennisperez97.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Creacion de Proyectos en JS</title>
+      <link>https://dennisperez97.github.io/my_launchx_blog/posts/post_2/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennisperez97.github.io/my_launchx_blog/posts/post_2/</guid>
+      <description>Hey! Aca aprenderas como hacer una creacion de proyecto en JS. Considera que todo proyecto nuevo necesita de:
+1.Conjunto de folders y archivos para organizar nuestro código 2.Versionamiento con git. 3.Puede incluir dependencias. 4.Todo proyecto lleva PRUEBAS DE UNIDAD. (No negociable)
+Veamos a continuación como crear un proyecto de js con todas estas características:
+ Crearemos un directo vacio donde guardaremos nuestro proyecto. Dentro de este directorio ejecutaremos el comando   npm init Este ejecutara un cliente que te preguntara los datos de tu proyecto, esta informacion es diferente para cada proyecto.</description>
+    </item>
+    
+    <item>
       <title>Mi ruta de aprendizaje launch-x</title>
       <link>https://dennisperez97.github.io/my_launchx_blog/posts/post_1/</link>
       <pubDate>Wed, 13 Apr 2022 00:00:00 +0000</pubDate>
