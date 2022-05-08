@@ -32,7 +32,7 @@ app.get('/turuta', (req,res) => {
 //El codigo que necesites para generar las respuestas
     res.send("Hola este es la respuesta de /turuta") ///devuelves en un formato JSON
 })
-
+```
 
 5. Levantas tu server con `node app.js`
 
