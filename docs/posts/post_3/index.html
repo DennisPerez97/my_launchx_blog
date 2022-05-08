@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Agregando pruebas de unidad en tu proyecto JS - Bitácora de Viaje de @DennisPerez97</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://dennisperez97.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Aca te contare como puedes agregar una dependencia llamada jest para realizar pruebas de unidad"/>
+    <meta property="og:title" content="Agregando pruebas de unidad en tu proyecto JS"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dennisperez97.github.io/my_launchx_blog/posts/post_3/"/>
+    
+    <meta property="og:description" content="Aca te contare como puedes agregar una dependencia llamada jest para realizar pruebas de unidad"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@visual_partner"/>
+    <meta name="twitter:creator" content="@visual_partner"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://dennisperez97.github.io/my_launchx_blog/">Bitácora de Viaje de @DennisPerez97</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-aboutme">
+                <a href="../../pages/about/">AboutMe</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Agregando pruebas de unidad en tu proyecto JS<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <p>Para esta post debes tener un proyecto en JS, aprenderas una tecnica para diseñar tu app, estos conceptos podras trasladarlos a cualquier otro ámbito del software.</p>
+<h1 id="agregando-las-dependencias">Agregando las dependencias</h1>
+<p>Una vez teniendo un proyecto de JS:</p>
+<blockquote>
+<p>Si quieres ver como hacer un proyecto en JS visita mi post anterior.
+<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+</blockquote>
+<p>1.Ejecuta <code>npm install --save-dev jest</code> para agregar jest
+2.Modifica tu archivo <code>package.json</code>, para que al ejecutar el comando npm test se pueda ejecutar jest, agregaras en el apartado de <code>&quot;scripts&quot;</code> el siguiente comando.</p>
+<p>Para linux</p>
+<blockquote>
+<p>&ldquo;test&rdquo;: &ldquo;node ./node_modules/.bin/jest&rdquo;</p>
+</blockquote>
+<p>Para windows</p>
+<blockquote>
+<p>&ldquo;test&rdquo;: &ldquo;node ./node_modules/jest/bin/jest&rdquo;</p>
+</blockquote>
+<p>3.Crea dos directorios <code>app</code> y <code>test</code>, crea en la raiz el archivo <code>index.js</code></p>
+<h1 id="agregando-una-prueba-de-unidad-vacia">Agregando una prueba de unidad vacia</h1>
+<p>4.En la carpeta test agrega una prueba de unidad en jest, procura que tenga el formato <code>ARCHIVOAPROBAR.test.js</code>, el archivo a probar puede ser cualquier modulo que tengas en tu proyecto, basta con referenciarlo dentro de la prueba y ejecutarlo como se utiliza en el proyecto.
+Dentro del archivo pondras una prueba de unidad que lleva el siguiente formado:</p>
+<blockquote>
+<p>describe(&ldquo;Test Suite Description&rdquo;, () =&gt; {
+test(&lsquo;Case 1 Description&rsquo;, () =&gt; {
+///Aca va todo tu script, para fines del post se utilizara la siguiente suma
+const resultOfSomething = 1 + 2
+expect(resultOfSomething).toBe(18);
+});
+})</p>
+</blockquote>
+<ol start="5">
+<li>Verifica que esta prueba se ejecute, te recomiendo hacerla fallar para corroborar que se esta ejecutando bien, la ejecutas utilizando el comando <code>npm test test/ARCHIVOAPROBAR.test.js</code>
+<img src="https://user-images.githubusercontent.com/99489937/167312722-8f27f989-8a97-43dd-8dd9-8f1972d9bc47.png" alt="image"></li>
+</ol>
+<p>Como observas en la imagen, se ejecuto la prueba pero fallo pues se esperaba un valor de 18 (<code>.toBe(18)</code>) y se recibio un 3 (&lsquo;1+2&rsquo;).</p>
+<h1 id="test-driven-development-by-martin-fowler">Test Driven Development by Martin Fowler</h1>
+<blockquote>
+<p>TDD Design Software Technique</p>
+</blockquote>
+<ol>
+<li>Write a test for the next bit of functionality you want to add.</li>
+<li>Write the functional code until the test passes.</li>
+<li>Refactor both new and old code to make it well structured.</li>
+</ol>
+<p>Referencia: TDD by Martin Fowler</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-linkedin">
+        <a href="https://www.linkedin.com/in/dennis-yassef-perez-rosado/" title="linkedin" target="_blank" rel="noopener">
+          <img src="../../images/social/linkedin.svg" width="24" height="24" alt="linkedin"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/DennisPerez97" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

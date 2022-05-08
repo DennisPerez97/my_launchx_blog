@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dennisperez97.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Agregando pruebas de unidad en tu proyecto JS</title>
+      <link>https://dennisperez97.github.io/my_launchx_blog/posts/post_3/</link>
+      <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dennisperez97.github.io/my_launchx_blog/posts/post_3/</guid>
+      <description>Para esta post debes tener un proyecto en JS, aprenderas una tecnica para diseñar tu app, estos conceptos podras trasladarlos a cualquier otro ámbito del software.
+Agregando las dependencias Una vez teniendo un proyecto de JS:
+ Si quieres ver como hacer un proyecto en JS visita mi post anterior.  1.Ejecuta npm install --save-dev jest para agregar jest 2.Modifica tu archivo package.json, para que al ejecutar el comando npm test se pueda ejecutar jest, agregaras en el apartado de &amp;quot;scripts&amp;quot; el siguiente comando.</description>
+    </item>
+    
+    <item>
       <title>Creacion de Proyectos en JS</title>
       <link>https://dennisperez97.github.io/my_launchx_blog/posts/post_2/</link>
       <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
